@@ -1,6 +1,7 @@
-package com.ashutosh.datastructures;
+package com.ashutosh.datastructures.linkedList;
 
 import java.util.Scanner;
+
 
 /**
  * Created by dell on 11/9/2015.
@@ -273,3 +274,4 @@ public class LinkedList {
 
 
 }
+

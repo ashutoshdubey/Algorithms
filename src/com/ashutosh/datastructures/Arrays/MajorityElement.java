@@ -6,6 +6,7 @@ import java.util.Scanner;
  * Created by dell on 11/21/2015.
  */
 // Code that prints the element that occurs most number of times
+    //Moore’s Voting Algorithm
 public class MajorityElement {
     static int getMajorityIndex(int []arr){
         int count=1;

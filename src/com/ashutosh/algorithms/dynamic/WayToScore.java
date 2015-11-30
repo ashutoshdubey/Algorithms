@@ -1,9 +1,9 @@
-package com.ashutosh.algorithms.puzzles;
+package com.ashutosh.algorithms.dynamic;
 
 import java.util.Scanner;
 
 /**
- * Created by dell on 11/4/2015.
+ * Created by dell on 11/30/2015.
  */
 public class WayToScore {
 

@@ -8,7 +8,7 @@ public class MinJumpsToReachEnd {
         if (i>=n)return 0;
         else{
             int min=Integer.MAX_VALUE;
-            for(int j=arr[i];j>=1;j--){
+            for(int j=1;j<=arr[i];j++){
                 int steps=1+minjumps(arr,i+j,n);
                 if(steps<min)min=steps;
 
@@ -34,6 +34,6 @@ public class MinJumpsToReachEnd {
         int arr[]={1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9};
         //int ans=minjumps(arr,0,arr.length-1);          //using recursive approach
         int ans=minusingmemoisation(arr,arr.length);          // using memoisation
-        System.out.print("Answer is: " +ans);
+        System.out.print("Mnimum jumps needed is: " +ans);
     }
 }
