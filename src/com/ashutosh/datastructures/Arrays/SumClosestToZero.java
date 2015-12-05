@@ -1,4 +1,4 @@
-package com.ashutosh.datastructures.Arrays;
+package com.ashutosh.datastructures.arrays;
 
 import java.util.Arrays;
 

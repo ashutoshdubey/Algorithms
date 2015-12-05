@@ -1,4 +1,4 @@
-package com.ashutosh.datastructures.Arrays;
+package com.ashutosh.datastructures.arrays;
 
 /**
  * Created by dell on 11/30/2015.

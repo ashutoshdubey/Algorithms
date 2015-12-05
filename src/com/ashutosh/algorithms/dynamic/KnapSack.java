@@ -21,7 +21,7 @@ public class KnapSack {
                else if(i<wt[j-1]){
                    ks[i][j]=ks[i][j-1];
                }else{
-                   ks[i][j]=Math.max(val[j-1]+ks[i-wt[j-1]][j],ks[i][j]);
+                   ks[i][j]=Math.max(val[j-1]+ks[i-wt[j-1]][j-1],ks[i][j-1]); //considering you cannot pick same element again
                }
             }
         }

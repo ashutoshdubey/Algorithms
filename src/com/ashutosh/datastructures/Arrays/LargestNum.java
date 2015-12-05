@@ -1,6 +1,5 @@
-package com.ashutosh.datastructures.Arrays;
+package com.ashutosh.datastructures.arrays;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
