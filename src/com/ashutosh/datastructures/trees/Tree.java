@@ -288,7 +288,25 @@ public class Tree {
         }
         return ifleafLevel(root.left,level+1)&&ifleafLevel(root.right,level+1);
     }
-
+    static int getMaxWidth(Node root){
+        int maxwidth=0;
+        for(int i=0;i<heigh(root);i++){
+            int width=getWidth(root,i);
+            if(width>maxwidth){
+                maxwidth=width;
+            }
+            return maxwidth;
+        }
+    }
+    
+    static int getWidth(Node root,int level){
+        if (root== NULL)return 0;
+        if (level== 1)return 1;  
+        else if (level > 1){
+            return getWidth(root->left, level-1) + 
+            getWidth(root->right, level-1);
+        }
+    }
     //see the question of printing the bottom view. It makes use of queue and treemap
     // with root having additional parameter called horizontal distance
 
