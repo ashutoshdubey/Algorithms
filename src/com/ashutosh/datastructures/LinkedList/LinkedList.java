@@ -202,10 +202,10 @@ public class LinkedList {
                 tempB=tempB.next;
             }
         }
-        if(tempA!=null){
+        while(tempA!=null){
             current.next=tempA;
         }
-        if(tempB!=null){
+        while(tempB!=null){
             current.next=tempB;
         }
         headC=headC.next;
