@@ -228,7 +228,7 @@ public class LinkedList {
         int diff=Math.abs(count1-count2);
         temp1=headA;
         temp2=headB;
-        if(count1==Math.max(count1,count1)) {
+        if(count1==Math.max(count1,count2)) {
             for (int i = 0; i < diff; i++) {
                 temp1 = temp1.next;
             }
