@@ -27,7 +27,7 @@ public class SortedSubsequenceSizeThree {
         for(int i=n-2;i>=0;i--){
             if(arr[i]>arr[max]){
                 max=i;
-                arr[max]=-1;
+                large[max]=-1;
             }else{
                 large[i]=max;
             }
