@@ -34,15 +34,18 @@ public class KMPSearch {
     static void computeLPSArray(char []pat,int []lps){
         int length=0;
         lps[0]=0;
-        for(int i=1;i<lps.length;i++){
+        int i=1;
+        while(i<pat.length){
             if(pat[i]==pat[length]){
                 length++;
                 lps[i]=length;
+                i++;
             }else {
                 if(length!=0){
-                    lps[i]=lps[length-1];
+                    length=lps[length-1];
                 }else{
                     lps[i]=0;
+                    i++;
                 }
             }
         }
